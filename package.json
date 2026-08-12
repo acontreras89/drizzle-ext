@@ -1,0 +1,29 @@
+{
+  "name": "drizzle-ext",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A set of utilities and helpers to construct type-safe, complex SQL expressions with Drizzle ORM",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "peerDependencies": {
+    "drizzle-orm": ">=0.44.0"
+  },
+  "devDependencies": {
+    "drizzle-orm": "^0.45.2",
+    "prettier": "^3.9.6",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.10"
+  }
+}
